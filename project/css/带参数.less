@@ -1,0 +1,24 @@
+.juzhong(@a,@b,@c) {
+    background-color: @c;
+    width: @a;
+    height: @b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.div1 {
+    width: 400px;
+    height: 600px;
+    border: 1px black solid;
+    margin: 100px auto;
+    position: relative;
+    .div2 {
+        
+        .juzhong(300px,400px,red);
+    }
+    .div3 {
+        
+        .juzhong(300px,300px,green);
+    }
+}

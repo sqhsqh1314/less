@@ -1,0 +1,23 @@
+@background-color:pink;
+//属性
+/*
+ * 会被编译到文件中
+ */
+@m:margin;
+@selector:.div2;
+.div1 {
+    width: 400px;
+    height: 600px;
+    border: 1px black solid;
+    @{m}: 100px auto;
+    position: relative;
+    @{selector} {
+        background-color: @background-color;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
